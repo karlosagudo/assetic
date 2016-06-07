@@ -110,11 +110,6 @@ class ScssphpFilter implements DependencyExtractorInterface
             $sc->setFormatter($this->formatter);
         }
 
-        if (isset($this->variables["lineNumberStyle"])) {
-            $sc->setLineNumberStyle($this->variables["lineNumberStyle"]);
-            unset($this->variables["lineNumberStyle"]);
-        }
-
         if (!empty($this->variables)) {
             $sc->setVariables($this->variables);
         }
